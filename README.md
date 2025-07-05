@@ -24,11 +24,11 @@ This portfolio exists to showcase thoughtful, audience-focused design with a bal
 - GitHub Projects (for solo workflow management)  
 
 ## 📁 Repo Structure
-/assets          # Images, mockups, logo files, branding visuals
-/content         # Written work: copywriting samples, talk scripts, bios
-/pages           # HTML or layout files for each section (e.g., homepage, about)
-/styles          # CSS, design tokens, brand palette, typography guides
-/projects        # Individual folders for each branding/web project
+'/assets'          # Images, mockups, logo files, branding visuals
+'/content'         # Written work: copywriting samples, talk scripts, bios
+'/pages'           # HTML or layout files for each section (e.g., homepage, about)
+'/styles'          # CSS, design tokens, brand palette, typography guides
+'/projects'        # Individual folders for each branding/web project
 │   ├── /project-name   # Specific case study, brand board, or visuals
 │   ├── /another-project
 README.md        # Overview of my portfolio 
