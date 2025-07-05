@@ -1,1 +1,85 @@
+:root: {
+/*  🖋️ Font Stack */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
 
+/*   🎨 Color Palette */
+  --color-jet: #38322E;
+  --color-khaki: #B5A89E;
+  --color-light-orange: #F6D2B2;
+  --color-linen: #FDF3E7;
+  --color-powder-blue: #A3BCC6;
+  --color-old-rose: #B76E79;
+}
+
+/* 🌼 Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--color-linen);
+  color: var(--color-jet);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* ✨ Typography */
+h1, h2 {
+  font-family: var(--font-heading);
+  color: var(--color-old-rose);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+blockquote {
+  font-style: italic;
+  color: #6F4B3E;
+  background-color: var(--color-light-orange);
+  padding: 1rem;
+  border-left: 4px solid #B76E79;
+  margin: 2rem 0;
+}
+
+/* 💛 Layout Components */
+header, section, footer {
+  margin-bottom: 3rem;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(183, 110, 121, 0.1);
+  max-width: 500px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* 🧶 Buttons */
+.cta-button, .cta-footer {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: #B76E79; /* CTA color */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .cta-footer:hover {
+  background-color: #6F4B3E;
+}
