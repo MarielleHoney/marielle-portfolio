@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navMenu = document.querySelector(".nav-menu");
+  console.log("Navbar script is running!");
 
-  menuToggle.addEventListener("click", function () {
-    navMenu.classList.toggle("active");
-  });
+  fetch("../components/navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+    });
 });
