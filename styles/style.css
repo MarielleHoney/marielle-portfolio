@@ -136,3 +136,79 @@ button[type="submit"] {
   border-radius: 6px;
   font-family: var(--font-body);
   font-weight
+
+
+
+  /* 🍃 Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-old-rose);
+  padding: 1rem 2rem;
+  font-family: var(--font-body);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 🌼 Logo */
+.logo a {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* 🍽️ Toggle Button (Hamburger) */
+.menu-toggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hidden on desktop */
+}
+
+/* 🧵 Nav Links */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: var(--color-linen);
+}
+
+/* 📱 Responsive Behavior */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-old-rose);
+    margin-top: 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
